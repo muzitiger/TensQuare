@@ -1,5 +1,7 @@
 package entity;
 
+import java.util.Collection;
+
 /**
  * @program: tensquare_parent
  * @description: 返回结果实体类
@@ -12,14 +14,21 @@ public class Result {
     private String message;//返回信息
     private Object data;//返回数据
 
-    public Result() {
-    }
-
-    public Result(boolean falg, Integer code, String message, Object data) {
-        this.falg = falg;
+    public Result(boolean flag, Integer code, String message, Object
+            data) {
+        super();
+        this.falg = flag;
         this.code = code;
         this.message = message;
         this.data = data;
+    }
+    public Result() {
+    }
+    public Result(boolean flag, Integer code, String message) {
+        super();
+        this.falg = flag;
+        this.code = code;
+        this.message = message;
     }
 
     public boolean isFalg() {

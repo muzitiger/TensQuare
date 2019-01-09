@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 /**
  * @program: tensquare_parent
- * @description: ${description}
+ * @description: 标签数据访问接口
  * @author: Ming.Li
  * @create: 2019-01-07 17:56
  **/
