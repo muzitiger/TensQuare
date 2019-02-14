@@ -43,7 +43,6 @@ public class LabelController {
 
     @RequestMapping(method = RequestMethod.POST)
     public Result add(@RequestBody Label label){
-
           return new Result(true,StatusCode.OK,"增加成功");
     }
 
