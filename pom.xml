@@ -9,6 +9,7 @@
     <modules>
         <module>tensquare_common</module>
         <module>ensquare_base</module>
+        <module>tensquare_recruit</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -37,6 +38,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
         </dependency>
     </dependencies>
 
