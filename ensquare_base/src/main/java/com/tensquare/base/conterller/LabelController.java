@@ -20,6 +20,7 @@ import java.util.Map;
  * @create: 2019-01-08 09:07
  **/
 @RestController
+@CrossOrigin
 @RequestMapping("/label")
 public class LabelController {
     @Autowired

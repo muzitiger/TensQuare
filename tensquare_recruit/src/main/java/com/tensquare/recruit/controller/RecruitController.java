@@ -104,5 +104,27 @@ public class RecruitController {
 		recruitService.deleteById(id);
 		return new Result(true,StatusCode.OK,"删除成功");
 	}
+
+	/** 
+	* @Description: 推荐职位列表
+	* @Param: [] 
+	* @return: entity.Result 
+	*/ 
+	@RequestMapping(value="/search/recommend",method= RequestMethod.GET)
+	public Result recommend(){
+		List<Recruit> list =
+				recruitService.findTop4ByStateOrderByCreatetimeDesc("2");
+		return new Result(true,StatusCode.OK,"查询成功",list);
+	}
+
+
+	/**
+	 * 最新职位列表
+	 * @return
+	 */
+	@RequestMapping(value="/search/newlist",method= RequestMethod.GET)
+	public Result newlist(){
+		return new Result(true,StatusCode.OK,"查询成功",recruitService.newlist());
+	}
 	
 }
